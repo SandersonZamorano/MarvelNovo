@@ -16,18 +16,21 @@
             </div>
         @endif
 
+        <div class="div-fundo">
+            <h1 class="titulo">Login</h1>
         <form method="POST" action="{{ route('login') }}">
             @csrf
             <fieldset>
-                <div class="div-login">
+                <div class="input-box">
                     <label for="email" value="{{ __('Email')}}" placeholder="Email">
                     <input id="email" class="login-input" type="email" name="email" :value="old('email')" required autofocus placeholder="Email"/>
                 </div>
+
                 <div class="input-box">
                     <label for="password" value="{{ __('Password') }}">
                     <input id="password" class="login-input" type="password" name="password" required autocomplete="current-password" placeholder="Senha"/>
                 </div>
-            
+                <br>
             <div class="input-box">
                 <label for="remember_me" class="div-login">
                     <x-jet-checkbox id="remember_me" name="remember" />
@@ -41,7 +44,8 @@
                         {{ __('Esqueceu a senha?') }}
                     </a>
                 @endif
-
+                <br><br>
+                
                 <button class="submit-padrao">
                     {{ __('Login') }}
                 <button>
@@ -54,6 +58,7 @@
             </div>
         </form>
             </fieldset>
+        </div>
     </x-jet-authentication-card>
 </x-guest-layout>
 @endsection

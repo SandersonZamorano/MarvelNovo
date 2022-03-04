@@ -127,11 +127,13 @@ nav {
 
 fieldset {
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 12px;
     margin: 10px;
     background-color: #fff;
+    width: 450px;
+    padding: 0px;
 }
-
+ 
 legend {
     border: 1px solid black;
     padding: 10px;
@@ -141,9 +143,28 @@ legend {
     color: #000;
 }
 
+
+.div-fundo {
+    background-color: rgba(17, 17, 17, 0.39);
+    height: 450px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.titulo {
+    color: #fff;
+    text-align: center;
+}
+
 .input-box {
     position: relative;
     margin: 5px;
+    width: 150px;
 }
 
 .login-input {
@@ -160,6 +181,10 @@ legend {
     border-radius: 4px;
 }
 
+.div-login {
+    color: black;
+}
+
 .label-input {
     top: 0px;
     left: 0px;
@@ -168,11 +193,12 @@ legend {
 .submit-padrao {
     background: linear-gradient(to right, #da381b, #64beca);
     width: 100%;
-    border: none;
+    border: 1px solid black;
     padding: 15px;
     color: #fff;
     font-size: 15px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .submit-padrao:hover {
@@ -186,6 +212,7 @@ p {
 h2 {
     text-align: center;
     text-decoration: none;
+    color: #000;
 }
 
 .nav-button {
@@ -225,8 +252,7 @@ h2 {
 }
 
 #columns a img {
-    float: left;
-    margin-top: 50px;
+    margin: 0px;
     padding: 10px;
     background: #fff;
     border: 1px solid black;
@@ -278,14 +304,10 @@ body {
 .titulo h2 {
     text-align: center;
     font-size: 23px;
-    padding: 0px;
+    margin: 0px;
 }
 
 .imagem img {
     display: flex;
     margin-left: 30px;
-}
-
-.span-desc:hover {
-    display: none;
 }

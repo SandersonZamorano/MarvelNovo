@@ -7,10 +7,10 @@
 @section('title','Cadastre-se')
         <x-jet-validation-errors class="mb-4" />
 @section('content')
-        <div class="teste">
+        <div class="div-fundo">
             <form method="POST" action="{{ route('register') }}">
                 <fieldset>
-                    <legend>Cadastre-se</legend>
+                    <h1 class="titulo">Cadastre-se</h1>
                     @csrf
                     <div class="input-box">
                         <label for="name" value="{{ __('Nome') }}" class="label-input">
